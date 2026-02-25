@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - SoundWave Premium Headphones</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>SoundWave</h1>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="account-icon"><i class="fas fa-user"></i></a>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you. Whether you have a question about our products, need technical support, or want to explore partnership opportunities, our team is here to help.</p>
+      </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="product-inquiry">Product Inquiry</option>
+                  <option value="technical-support">Technical Support</option>
+                  <option value="order-status">Order Status</option>
+                  <option value="returns">Returns & Exchanges</option>
+                  <option value="partnership">Partnership Opportunities</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to our newsletter for exclusive deals and updates</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <h3>Contact Information</h3>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Address</h4>
+                  <p>123 Audio Lane<br>San Francisco, CA 94107<br>United States</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                  <p class="text-muted">Mon-Fri, 9am-6pm PST</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>support@soundwave.com</p>
+                  <p class="text-muted">We'll respond within 24 hours</p>
+                </div>
+              </div>
+              <div class="social-links">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-hours">
+              <h3>Business Hours</h3>
+              <table class="hours-table">
+                <tr>
+                  <td>Monday - Friday:</td>
+                  <td>9:00 AM - 6:00 PM PST</td>
+                </tr>
+                <tr>
+                  <td>Saturday:</td>
+                  <td>10:00 AM - 4:00 PM PST</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>Closed</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2>Visit Our Showroom</h2>
+        <p>Experience our products in person at our flagship showroom in San Francisco.</p>
+        <div class="map-container">
+          <!-- This would be replaced with an actual map integration -->
+          <div class="map-placeholder">
+            <img src="/placeholder.svg?height=400&width=1200&text=Map" alt="Map to SoundWave showroom">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faqs">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How long does shipping take?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>Standard shipping typically takes 3-5 business days within the continental United States. Expedited shipping options are available at checkout for faster delivery. International shipping times vary by location, usually between 7-14 business days.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your return policy?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>We offer a 30-day return policy on all our products. If you're not completely satisfied with your purchase, you can return it within 30 days of delivery for a full refund or exchange. Products must be in their original condition with all packaging and accessories.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do I register my product for warranty?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>To register your product for warranty, visit the "Support" section of our website and select "Product Registration." You'll need your product's serial number, which can be found on the product itself or on the packaging. All SoundWave products come with a 2-year limited warranty.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer international shipping?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, we ship to most countries worldwide. International shipping rates and delivery times vary by location. Please note that customers are responsible for any customs fees, import taxes, or duties that may apply to international orders.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How can I track my order?</h3>
+              <button class="faq-toggle"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="faq-answer">
+              <p>Once your order ships, you'll receive a confirmation email with a tracking number. You can use this number to track your package on our website under "Order Tracking" or directly through the carrier's website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="more-questions">
+          <p>Still have questions? Contact our support team for assistance.</p>
+          <a href="#" class="btn btn-outline">View All FAQs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>SoundWave</h2>
+          </div>
+          <p>Premium headphones for audiophiles and casual listeners. Experience sound like never before.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=over-ear">Over-Ear</a></li>
+            <li><a href="products.html?category=in-ear">In-Ear</a></li>
+            <li><a href="products.html?category=wireless">Wireless</a></li>
+            <li><a href="products.html?category=gaming">Gaming</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Repair Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SoundWave. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - SoundWave Premium Headphones</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>SoundWave</h1>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="account-icon"><i class="fas fa-user"></i></a>
+          <a href="cart.html" class="cart-icon active">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Your Shopping Cart</h1>
+      </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+      <div class="container">
+        <div class="cart-content">
+          <!-- Empty Cart Message (shown when cart is empty) -->
+          <div class="empty-cart" id="empty-cart" style="display: none;">
+            <div class="empty-cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h2>Your cart is empty</h2>
+            <p>Looks like you haven't added any items to your cart yet.</p>
+            <a href="products.html" class="btn btn-primary">Start Shopping</a>
+          </div>
+
+          <!-- Cart Items (shown when cart has items) -->
+          <div class="cart-with-items" id="cart-with-items">
+            <div class="cart-grid">
+              <!-- Cart Items List -->
+              <div class="cart-items">
+                <div class="cart-header">
+                  <h2>Cart Items (<span id="cart-count">3</span>)</h2>
+                  <button class="btn btn-text" id="clear-cart">Clear Cart</button>
+                </div>
+
+                <div class="cart-item-list" id="cart-item-list">
+                  <!-- Cart Item 1 -->
+                  <div class="cart-item" data-id="1">
+                    <div class="cart-item-image">
+                      <img src="/placeholder.svg?height=120&width=120" alt="SoundWave Pro X">
+                    </div>
+                    <div class="cart-item-details">
+                      <h3 class="cart-item-name">SoundWave Pro X</h3>
+                      <p class="cart-item-meta">Color: Black</p>
+                      <div class="cart-item-price">
+                        <span class="current-price">$299.99</span>
+                        <span class="original-price">$349.99</span>
+                      </div>
+                      <div class="cart-item-actions">
+                        <div class="quantity-selector small">
+                          <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                          <input type="number" value="1" min="1" max="10" class="cart-item-quantity">
+                          <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-text remove-item">
+                          <i class="fas fa-trash-alt"></i> Remove
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Cart Item 2 -->
+                  <div class="cart-item" data-id="2">
+                    <div class="cart-item-image">
+                      <img src="/placeholder.svg?height=120&width=120&text=In-Ear" alt="SoundWave Air Buds">
+                    </div>
+                    <div class="cart-item-details">
+                      <h3 class="cart-item-name">SoundWave Air Buds</h3>
+                      <p class="cart-item-meta">Color: White</p>
+                      <div class="cart-item-price">
+                        <span class="current-price">$149.99</span>
+                      </div>
+                      <div class="cart-item-actions">
+                        <div class="quantity-selector small">
+                          <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                          <input type="number" value="1" min="1" max="10" class="cart-item-quantity">
+                          <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-text remove-item">
+                          <i class="fas fa-trash-alt"></i> Remove
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Cart Item 3 -->
+                  <div class="cart-item" data-id="3">
+                    <div class="cart-item-image">
+                      <img src="/placeholder.svg?height=120&width=120&text=Case" alt="Headphone Carrying Case">
+                    </div>
+                    <div class="cart-item-details">
+                      <h3 class="cart-item-name">Premium Carrying Case</h3>
+                      <p class="cart-item-meta">Color: Black</p>
+                      <div class="cart-item-price">
+                        <span class="current-price">$39.99</span>
+                        <span class="original-price">$49.99</span>
+                      </div>
+                      <div class="cart-item-actions">
+                        <div class="quantity-selector small">
+                          <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                          <input type="number" value="1" min="1" max="10" class="cart-item-quantity">
+                          <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn btn-text remove-item">
+                          <i class="fas fa-trash-alt"></i> Remove
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cart-continue-shopping">
+                  <a href="products.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Continue Shopping
+                  </a>
+                </div>
+              </div>
+
+              <!-- Cart Summary -->
+              <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-items">
+                  <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="subtotal">$489.97</span>
+                  </div>
+                  <div class="summary-item">
+                    <span>Shipping</span>
+                    <span id="shipping">Free</span>
+                  </div>
+                  <div class="summary-item">
+                    <span>Tax</span>
+                    <span id="tax">$39.20</span>
+                  </div>
+                  <div class="summary-item discount">
+                    <span>Discount</span>
+                    <span id="discount">-$60.00</span>
+                  </div>
+                </div>
+                <div class="summary-total">
+                  <span>Total</span>
+                  <span id="total">$469.17</span>
+                </div>
+
+                <div class="promo-code">
+                  <h3>Promo Code</h3>
+                  <form class="promo-form">
+                    <input type="text" placeholder="Enter promo code" id="promo-code">
+                    <button type="submit" class="btn btn-outline">Apply</button>
+                  </form>
+                </div>
+
+                <button class="btn btn-primary btn-checkout">
+                  Proceed to Checkout
+                </button>
+
+                <div class="payment-methods">
+                  <p>We accept:</p>
+                  <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- You May Also Like -->
+    <section class="you-may-like">
+      <div class="container">
+        <h2 class="section-title">You May Also Like</h2>
+        <div class="product-slider">
+          <!-- Product recommendations will be dynamically loaded -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>SoundWave</h2>
+          </div>
+          <p>Premium headphones for audiophiles and casual listeners. Experience sound like never before.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=over-ear">Over-Ear</a></li>
+            <li><a href="products.html?category=in-ear">In-Ear</a></li>
+            <li><a href="products.html?category=wireless">Wireless</a></li>
+            <li><a href="products.html?category=gaming">Gaming</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Repair Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SoundWave. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

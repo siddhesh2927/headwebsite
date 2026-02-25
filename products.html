@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - SoundWave Premium Headphones</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>SoundWave</h1>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="account-icon"><i class="fas fa-user"></i></a>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Shop Banner -->
+    <section class="shop-banner">
+      <div class="container">
+        <h1>Shop Our Collection</h1>
+        <p>Find the perfect headphones to match your lifestyle and audio preferences</p>
+      </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+      <div class="container">
+        <div class="shop-grid">
+          <!-- Filters Sidebar -->
+          <aside class="shop-filters">
+            <div class="filter-section">
+              <h3>Categories</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" name="category" value="over-ear">
+                  <span>Over-Ear</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="category" value="in-ear">
+                  <span>In-Ear</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="category" value="wireless">
+                  <span>Wireless</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="category" value="gaming">
+                  <span>Gaming</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="category" value="accessories">
+                  <span>Accessories</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Price Range</h3>
+              <div class="price-slider">
+                <div class="price-inputs">
+                  <input type="number" id="min-price" placeholder="Min" min="0">
+                  <span>-</span>
+                  <input type="number" id="max-price" placeholder="Max" min="0">
+                </div>
+                <button class="btn btn-small" id="apply-price">Apply</button>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Brand</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" name="brand" value="soundwave">
+                  <span>SoundWave</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="brand" value="audiophile">
+                  <span>Audiophile</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="brand" value="beatmaster">
+                  <span>BeatMaster</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="brand" value="sonique">
+                  <span>Sonique</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="brand" value="harmonic">
+                  <span>Harmonic</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-section">
+              <h3>Features</h3>
+              <div class="filter-options">
+                <label class="filter-option">
+                  <input type="checkbox" name="feature" value="noise-cancelling">
+                  <span>Noise Cancelling</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="feature" value="bluetooth">
+                  <span>Bluetooth</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="feature" value="microphone">
+                  <span>Built-in Mic</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="feature" value="foldable">
+                  <span>Foldable</span>
+                </label>
+                <label class="filter-option">
+                  <input type="checkbox" name="feature" value="waterproof">
+                  <span>Waterproof</span>
+                </label>
+              </div>
+            </div>
+
+            <button class="btn btn-outline btn-full" id="clear-filters">Clear All Filters</button>
+          </aside>
+
+          <!-- Products Grid -->
+          <div class="products-container">
+            <div class="products-header">
+              <div class="products-count">
+                <p><span id="product-count">0</span> products</p>
+              </div>
+              <div class="products-sort">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="newest">Newest</option>
+                  <option value="rating">Top Rated</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="product-grid" id="products-grid">
+              <!-- Products will be dynamically loaded with JavaScript -->
+            </div>
+
+            <div class="pagination">
+              <button class="pagination-prev disabled"><i class="fas fa-chevron-left"></i></button>
+              <div class="pagination-numbers">
+                <span class="page-number active">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+                <span class="page-number">4</span>
+              </div>
+              <button class="pagination-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recently Viewed -->
+    <section class="recently-viewed">
+      <div class="container">
+        <h2 class="section-title">Recently Viewed</h2>
+        <div class="product-slider">
+          <!-- Recently viewed products will be dynamically loaded -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>SoundWave</h2>
+          </div>
+          <p>Premium headphones for audiophiles and casual listeners. Experience sound like never before.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=over-ear">Over-Ear</a></li>
+            <li><a href="products.html?category=in-ear">In-Ear</a></li>
+            <li><a href="products.html?category=wireless">Wireless</a></li>
+            <li><a href="products.html?category=gaming">Gaming</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Repair Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SoundWave. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

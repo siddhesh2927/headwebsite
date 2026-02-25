@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Name - SoundWave Premium Headphones</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>SoundWave</h1>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="account-icon"><i class="fas fa-user"></i></a>
+          <a href="cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Shop</a></li>
+          <li><a href="products.html?category=over-ear">Over-Ear</a></li>
+          <li class="current">SoundWave Pro X</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+      <div class="container">
+        <div class="product-detail-grid">
+          <!-- Product Images -->
+          <div class="product-images">
+            <div class="main-image">
+              <img id="main-product-image" src="/placeholder.svg?height=500&width=500" alt="SoundWave Pro X Headphones">
+            </div>
+            <div class="thumbnail-images">
+              <div class="thumbnail active" data-image="/placeholder.svg?height=500&width=500">
+                <img src="/placeholder.svg?height=100&width=100" alt="SoundWave Pro X - Front view">
+              </div>
+              <div class="thumbnail" data-image="/placeholder.svg?height=500&width=500&text=Side">
+                <img src="/placeholder.svg?height=100&width=100&text=Side" alt="SoundWave Pro X - Side view">
+              </div>
+              <div class="thumbnail" data-image="/placeholder.svg?height=500&width=500&text=Back">
+                <img src="/placeholder.svg?height=100&width=100&text=Back" alt="SoundWave Pro X - Back view">
+              </div>
+              <div class="thumbnail" data-image="/placeholder.svg?height=500&width=500&text=Detail">
+                <img src="/placeholder.svg?height=100&width=100&text=Detail" alt="SoundWave Pro X - Detail view">
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="product-info">
+            <div class="product-header">
+              <h1 id="product-name">SoundWave Pro X</h1>
+              <div class="product-rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="rating-count">128 reviews</span>
+              </div>
+            </div>
+
+            <div class="product-price">
+              <span class="current-price" id="product-price">$299.99</span>
+              <span class="original-price">$349.99</span>
+              <span class="discount-badge">-14%</span>
+            </div>
+
+            <div class="product-description">
+              <p>Experience unparalleled sound quality with the SoundWave Pro X. These premium over-ear headphones feature active noise cancellation, high-resolution audio, and up to 30 hours of battery life. The memory foam ear cushions provide exceptional comfort for extended listening sessions.</p>
+            </div>
+
+            <div class="product-options">
+              <div class="option-group">
+                <h3>Color</h3>
+                <div class="color-options">
+                  <button class="color-option active" data-color="black" style="background-color: #222;">
+                    <span class="sr-only">Black</span>
+                  </button>
+                  <button class="color-option" data-color="silver" style="background-color: #C0C0C0;">
+                    <span class="sr-only">Silver</span>
+                  </button>
+                  <button class="color-option" data-color="navy" style="background-color: #000080;">
+                    <span class="sr-only">Navy</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <div class="quantity-selector">
+                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                <input type="number" value="1" min="1" max="10" id="product-quantity">
+                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+              </div>
+              <button class="btn btn-primary btn-add-to-cart">
+                <i class="fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+              <button class="btn btn-outline btn-wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="product-meta">
+              <div class="meta-item">
+                <span class="meta-label">SKU:</span>
+                <span class="meta-value">SW-PRO-X-BLK</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Category:</span>
+                <span class="meta-value">Over-Ear, Wireless, Noise Cancelling</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Tags:</span>
+                <span class="meta-value">Premium, Bluetooth 5.0, Hi-Res Audio</span>
+              </div>
+            </div>
+
+            <div class="product-delivery">
+              <div class="delivery-option">
+                <i class="fas fa-truck"></i>
+                <div>
+                  <h4>Free Shipping</h4>
+                  <p>On orders over $100</p>
+                </div>
+              </div>
+              <div class="delivery-option">
+                <i class="fas fa-box"></i>
+                <div>
+                  <h4>In Stock</h4>
+                  <p>Ships within 1-2 business days</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+          <div class="tabs-header">
+            <button class="tab-btn active" data-tab="description">Description</button>
+            <button class="tab-btn" data-tab="specifications">Specifications</button>
+            <button class="tab-btn" data-tab="reviews">Reviews</button>
+          </div>
+          <div class="tabs-content">
+            <div class="tab-panel active" id="description">
+              <h3>Premium Sound Experience</h3>
+              <p>The SoundWave Pro X headphones deliver an exceptional audio experience with custom-tuned 40mm dynamic drivers that produce rich, detailed sound across all frequencies. The advanced active noise cancellation technology effectively blocks out ambient noise, allowing you to immerse yourself fully in your music.</p>
+              
+              <h3>Comfort and Durability</h3>
+              <p>Designed for extended listening sessions, the Pro X features memory foam ear cushions covered in premium protein leather that conforms to your ears for a comfortable fit. The adjustable headband and swiveling ear cups ensure a perfect fit for any head size.</p>
+              
+              <h3>Wireless Freedom</h3>
+              <p>With Bluetooth 5.0 technology, enjoy stable wireless connectivity with a range of up to 30 feet. The built-in battery provides up to 30 hours of playback time on a single charge, and the quick-charge feature gives you 5 hours of listening time with just 15 minutes of charging.</p>
+              
+              <h3>Intuitive Controls</h3>
+              <p>The touch-sensitive controls on the ear cup allow you to adjust volume, skip tracks, and answer calls with simple gestures. The built-in microphone array ensures clear voice pickup for calls and voice assistants.</p>
+            </div>
+            <div class="tab-panel" id="specifications">
+              <table class="specs-table">
+                <tr>
+                  <th>Driver Size</th>
+                  <td>40mm Dynamic Drivers</td>
+                </tr>
+                <tr>
+                  <th>Frequency Response</th>
+                  <td>20Hz - 40kHz</td>
+                </tr>
+                <tr>
+                  <th>Impedance</th>
+                  <td>32 Ohms</td>
+                </tr>
+                <tr>
+                  <th>Sensitivity</th>
+                  <td>102dB SPL/mW</td>
+                </tr>
+                <tr>
+                  <th>Bluetooth Version</th>
+                  <td>5.0</td>
+                </tr>
+                <tr>
+                  <th>Bluetooth Range</th>
+                  <td>Up to 30 feet (10m)</td>
+                </tr>
+                <tr>
+                  <th>Battery Life</th>
+                  <td>Up to 30 hours (ANC on)</td>
+                </tr>
+                <tr>
+                  <th>Charging Time</th>
+                  <td>2 hours (full charge)</td>
+                </tr>
+                <tr>
+                  <th>Quick Charge</th>
+                  <td>15 min charge = 5 hours playback</td>
+                </tr>
+                <tr>
+                  <th>Weight</th>
+                  <td>310g</td>
+                </tr>
+                <tr>
+                  <th>Connectivity</th>
+                  <td>Bluetooth, 3.5mm audio jack, USB-C</td>
+                </tr>
+                <tr>
+                  <th>Microphone</th>
+                  <td>Dual beamforming microphones</td>
+                </tr>
+                <tr>
+                  <th>Controls</th>
+                  <td>Touch controls, physical buttons</td>
+                </tr>
+                <tr>
+                  <th>In the Box</th>
+                  <td>Headphones, Carrying case, USB-C charging cable, 3.5mm audio cable, User manual</td>
+                </tr>
+              </table>
+            </div>
+            <div class="tab-panel" id="reviews">
+              <div class="reviews-summary">
+                <div class="average-rating">
+                  <div class="rating-number">4.7</div>
+                  <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="rating-count">Based on 128 reviews</div>
+                </div>
+                <div class="rating-breakdown">
+                  <div class="rating-bar">
+                    <span class="rating-label">5 stars</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <span class="rating-percent">75%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <span class="rating-label">4 stars</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 20%;"></div>
+                    </div>
+                    <span class="rating-percent">20%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <span class="rating-label">3 stars</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 3%;"></div>
+                    </div>
+                    <span class="rating-percent">3%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <span class="rating-label">2 stars</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 1%;"></div>
+                    </div>
+                    <span class="rating-percent">1%</span>
+                  </div>
+                  <div class="rating-bar">
+                    <span class="rating-label">1 star</span>
+                    <div class="progress-bar">
+                      <div class="progress" style="width: 1%;"></div>
+                    </div>
+                    <span class="rating-percent">1%</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review-form-container">
+                <button class="btn btn-secondary" id="write-review-btn">Write a Review</button>
+                <form class="review-form" id="review-form" style="display: none;">
+                  <h3>Write Your Review</h3>
+                  <div class="form-group">
+                    <label for="review-rating">Rating</label>
+                    <div class="rating-input">
+                      <i class="far fa-star" data-rating="1"></i>
+                      <i class="far fa-star" data-rating="2"></i>
+                      <i class="far fa-star" data-rating="3"></i>
+                      <i class="far fa-star" data-rating="4"></i>
+                      <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="review-title">Review Title</label>
+                    <input type="text" id="review-title" placeholder="Summarize your experience">
+                  </div>
+                  <div class="form-group">
+                    <label for="review-content">Review</label>
+                    <textarea id="review-content" rows="5" placeholder="Share your experience with this product"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="reviewer-name">Your Name</label>
+                    <input type="text" id="reviewer-name" placeholder="Your name">
+                  </div>
+                  <div class="form-group">
+                    <label for="reviewer-email">Your Email</label>
+                    <input type="email" id="reviewer-email" placeholder="Your email (will not be published)">
+                  </div>
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                    <button type="button" class="btn btn-outline" id="cancel-review">Cancel</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="reviews-list">
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="review-title">Exceptional sound quality and comfort</h4>
+                  </div>
+                  <div class="review-meta">
+                    <span class="reviewer-name">Michael T.</span>
+                    <span class="review-date">May 2, 2025</span>
+                    <span class="verified-purchase">Verified Purchase</span>
+                  </div>
+                  <div class="review-content">
+                    <p>I've been using these headphones for about a month now, and I'm extremely impressed with both the sound quality and comfort. The noise cancellation is top-notch, and I can wear them for hours without any discomfort. The battery life is also excellent - I only need to charge them about once a week with daily use.</p>
+                  </div>
+                  <div class="review-helpful">
+                    <span>Was this review helpful?</span>
+                    <button class="btn btn-small">Yes</button>
+                    <button class="btn btn-small">No</button>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <h4 class="review-title">Great headphones, but battery drains quickly</h4>
+                  </div>
+                  <div class="review-meta">
+                    <span class="reviewer-name">Sarah L.</span>
+                    <span class="review-date">April 15, 2025</span>
+                    <span class="verified-purchase">Verified Purchase</span>
+                  </div>
+                  <div class="review-content">
+                    <p>The sound quality is fantastic, and the noise cancellation works really well. My only complaint is that the battery doesn't seem to last as long as advertised. I'm getting about 20 hours instead of the promised 30. Still, they're comfortable and the sound is amazing, so I'm happy with my purchase overall.</p>
+                  </div>
+                  <div class="review-helpful">
+                    <span>Was this review helpful?</span>
+                    <button class="btn btn-small">Yes</button>
+                    <button class="btn btn-small">No</button>
+                  </div>
+                </div>
+
+                <div class="review-item">
+                  <div class="review-header">
+                    <div class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="review-title">Worth every penny</h4>
+                  </div>
+                  <div class="review-meta">
+                    <span class="reviewer-name">David R.</span>
+                    <span class="review-date">March 28, 2025</span>
+                    <span class="verified-purchase">Verified Purchase</span>
+                  </div>
+                  <div class="review-content">
+                    <p>These are by far the best headphones I've ever owned. The sound is incredibly clear and balanced, with deep bass that doesn't overpower the mids and highs. The noise cancellation is perfect for my daily commute on the subway. The build quality is excellent, and they look sleek and professional. Highly recommended!</p>
+                  </div>
+                  <div class="review-helpful">
+                    <span>Was this review helpful?</span>
+                    <button class="btn btn-small">Yes</button>
+                    <button class="btn btn-small">No</button>
+                  </div>
+                </div>
+
+                <button class="btn btn-outline btn-load-more">Load More Reviews</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Products -->
+        <section class="related-products">
+          <h2 class="section-title">You May Also Like</h2>
+          <div class="product-grid">
+            <!-- Related products will be dynamically loaded -->
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <h2>SoundWave</h2>
+          </div>
+          <p>Premium headphones for audiophiles and casual listeners. Experience sound like never before.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="products.html?category=over-ear">Over-Ear</a></li>
+            <li><a href="products.html?category=in-ear">In-Ear</a></li>
+            <li><a href="products.html?category=wireless">Wireless</a></li>
+            <li><a href="products.html?category=gaming">Gaming</a></li>
+            <li><a href="products.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Repair Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SoundWave. All rights reserved.</p>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
